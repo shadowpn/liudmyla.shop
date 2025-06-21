@@ -10,6 +10,8 @@ export default function Header() {
         <Link href="#courses">Corsi</Link>
         <Link href="#products">Prodotti</Link>
         <Link href="#contacts">Contatti</Link>
+        <Link href="/login">Login</Link>
+        <Link href="/register">Register</Link>
       </nav>
 
       {/* Поиск / Иконка */}
