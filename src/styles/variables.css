@@ -1,0 +1,15 @@
+:root {
+  --background: #000000;
+  --foreground: #ffffff;
+
+  --primary: #ff29d0;
+  --secondary: #ffffff;
+  --heading-font: 'Montserrat', Arial, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}

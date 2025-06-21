@@ -1,0 +1,106 @@
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url("/img/lyudmila.png.webp");
+    background-size: cover;
+    background-position: 80% center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    z-index: 0;
+  }
+  
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+  }
+  
+  .content {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    padding-right: 350px;
+    
+  }
+  
+  .textBlock {
+    margin-top: 50px;
+    font-style: italic;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    max-width: 700px;
+    text-align: left;
+  }
+  
+  .underline {
+    text-decoration: underline;
+    color:#ff29d0
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 30px;
+  }
+  
+  .buttonPink,
+  .buttonWhite {
+    flex: 1; /* 💡 Растягиваем кнопки на всю ширину */
+    text-align: center;
+    padding: 0.75rem 1rem;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 1.3rem;
+    transition: all 0.3s ease;
+  }
+  
+  /* Neumorphic стиль — розовая кнопка */
+  .buttonPink {
+    background: #ff29d0;
+    color: white;
+    box-shadow:
+      4px 4px 8px rgba(0, 0, 0, 0.3),
+      -4px -4px 8px rgba(255, 255, 255, 0.1);
+  }
+  .buttonPink:hover {
+    transform: translateY(-2px);
+    box-shadow:
+      2px 2px 6px rgba(0, 0, 0, 0.4),
+      -2px -2px 6px rgba(255, 255, 255, 0.15);
+  }
+  
+  /* Neumorphic стиль — белая кнопка */
+  .buttonWhite {
+    background: white;
+    color: #ff29d0;
+    box-shadow:
+      4px 4px 8px rgba(0, 0, 0, 0.2),
+      -4px -4px 8px rgba(255, 255, 255, 0.8);
+  }
+  .buttonWhite:hover {
+    transform: translateY(-2px);
+    box-shadow:
+      2px 2px 6px rgba(0, 0, 0, 0.25),
+      -2px -2px 6px rgba(255, 255, 255, 1);
+  }
+  
+
+  @media (max-width: 768px) {
+    .content {
+      margin-left: 0; /* сбросим смещение на мобильных */
+      align-items: center;
+      text-align: center;
+    }
+  }
+  
